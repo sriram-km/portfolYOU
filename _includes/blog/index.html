@@ -1,7 +1,29 @@
-<div class="card-group mt-2">
+<div class="card-columns m-3 mt-5">
+
+  <!-- {% for post in site.posts %}
+    {% include blog/post-card.html %}
+  {% endfor %} -->
 
   {% for post in site.posts %}
+
+    {%- assign post_type  = "local" -%}
+    {%- assign post_id    = post.title | slugify -%}
+    {%- assign post_img   = post.image -%}
+    {%- assign post_name  = post.title -%}
+    {%- assign post_desc  = post.description -%}
+    {%- assign post_tags = post.tags -%}
+    {%- assign post_date = post.date -%}
+
+    {%- if post.external_url -%}
+      {%- assign post_url = post.external_url -%}
+      {%- assign external    = true -%}
+    {%- else -%}
+      {%- assign post_url = post.url | relative_url -%}
+      {%- assign external    = false -%}
+    {%- endif -%}
+
     {% include blog/post-card.html %}
+
   {% endfor %}
   
 </div>
