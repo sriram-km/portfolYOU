@@ -1,31 +1,38 @@
 .search-box {
-    box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .post.card {
-    border-radius: $rounded-borders;
-    text-decoration: none !important;
-    margin: 10px auto;
-    .card-img-top {
-        border-radius: $rounded-borders $rounded-borders 0 0;
-    }
-    transition: transform 400ms;
-    &:hover:not(.post) {
-        transform: translateY(-8px);
-        box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
-    }
-    .card-footer {
+  border-radius: $rounded-borders;
+  text-decoration: none !important;
+  margin: 10px auto;
+
+  .card-img-top {
+    border-radius: $rounded-borders $rounded-borders 0 0;
+  }
+
+  transition: transform 400ms;
+
+  &:hover:not(.project) {
+    transform: translateY(-8px);
+    box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
+  }
+
+  .card-footer {
       font-size: 14px;
       margin: 0 -15px -15px -15px;
       padding: 15px 35px;
-    }
+      background-color: rgba(0,0,0,.05);
+      border-radius: 15px;
+      border: 1px solid rgba(0,0,0,.125);
+  }
 }
 
 .post-metadata {
-    font-size: 14px;
-    margin-top: -6px;
-    .tag:hover {
-        background-color: $primary;
-        color: white !important;
-    }
+  font-size: 14px;
+  margin-top: -6px;
+  .tag:hover {
+      background-color: $primary;
+      color: white !important;
+  }
 }

@@ -5,9 +5,6 @@
     {%- endif -%}
     <div class="card-body">
       <h5 id="{{ post_id }}-name" class="card-title">
-          {%- if post_type == "remote" -%}
-          <i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |&nbsp;
-          {%- endif -%}
         {{ post_name }}
       </h5>
       <p id="{{ post_id }}-desc" class="card-text">{{ post_desc }}</p>
