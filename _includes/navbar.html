@@ -2,12 +2,12 @@
 
   <a class="navbar-brand" href="{{ site.baseurl }}/"><h5><b>{{ site.title }}</b></h5></a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-1x fa-bars text-themed"></i>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto">
+    <div class="navbar-nav ms-auto">
 
       {%- assign html_pages = site.html_pages | sort: 'weight' -%}
       {%- assign filtered_pages = "" | split: "" -%}

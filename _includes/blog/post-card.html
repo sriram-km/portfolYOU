@@ -10,7 +10,7 @@
       <p id="{{ post_id }}-desc" class="card-text">{{ post_desc }}</p>
       <p id="{{ post_id }}-tools" class="card-text">
         {%- for tool in post_tags -%}
-        <span class="badge badge-pill text-primary border border-primary ml-1">{{ tool }}</span>
+        <span class="badge rounded-pill text-primary border border-primary ms-1">{{ tool }}</span>
         {%- endfor -%}
       </p>
       <p class="card-footer {{ text_style }}">
