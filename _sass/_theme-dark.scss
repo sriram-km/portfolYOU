@@ -42,6 +42,16 @@ $dark-900: #17191a;
   // Cards
   .card {
     background-color: $dark-600;
+    color: $text-white;
+  }
+  
+  .card-body{
+    background-color: $dark-600;
+    color: $text-white;
+  }
+
+  .form-text {
+    color: $text-white;
   }
 
   .card.border {
