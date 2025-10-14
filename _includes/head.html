@@ -16,6 +16,13 @@
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
 
+   <!-- Canonical URL -->
+  {% if page.canonical_url %}
+    <link rel="canonical" href="{{ page.canonical_url }}">
+  {% else %}
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {% endif %}
+  
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
 

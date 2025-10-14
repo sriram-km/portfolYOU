@@ -71,6 +71,10 @@ analytics:
   enabled: false                                        # Set true to enable analytics
   google:
     tracking_id: your-google-tracking-id
+  
+  ahrefs:
+    enabled: false
+    ahrefs_key: your-ahrefs-key
 
 
 ### Defaults for collections ###

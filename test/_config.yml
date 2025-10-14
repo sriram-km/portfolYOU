@@ -42,6 +42,9 @@ analytics:
   google:
     tracking_id: google-tracking-id
 
+  ahrefs:
+    enabled: false
+    ahrefs_key: your-ahrefs-key
 
 ### Defaults for collections ###
 defaults:
